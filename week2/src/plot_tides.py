@@ -10,7 +10,7 @@ from scraping_utils import get_url, parse
 # load the environment variables
 dotenv.load_dotenv('../../week1/src/.env')
 
-year = int(os.getenv('YEAR', 2024))
+year = int(os.getenv('YEAR', 2021))
 filename = os.getenv('FILENAME', "crawled-page-{year}.html").format(year=year)
 
 # get page
